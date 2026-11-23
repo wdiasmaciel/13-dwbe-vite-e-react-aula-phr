@@ -103,7 +103,7 @@ Usando Node.js e Express crie uma API de produtos.
 4. Implemente uma tela que exiba uma mensagem de carregamento enquanto a requisição estiver em andamento.
 5. Adicione tratamento para erros HTTP (404 e 500), exibindo mensagens apropriadas ao usuário.
 6. Organize todas as chamadas da API em arquivos dentro da pasta `services`, separando responsabilidades de CRUD (Create, Read, Update, Delete).
-7. Como desafio, adapte a aplicação para consumir uma API pública (por exemplo, de países, usuários ou livros), exibindo os dados em componentes React reutilizáveis.
+7. Como desafio, adapte a aplicação para consumir uma API pública (por exemplo, de países, usuários, CEP ou livros), exibindo os dados em componentes React reutilizáveis.
 
 ---
 
