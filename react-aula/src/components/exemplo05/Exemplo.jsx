@@ -8,7 +8,7 @@ export default function Exemplo03({ voltar }) {
     async function carregarProdutos() {
 
         try {
-            const resposta = await fetch("https://fakestoreapi.com/products1");
+            const resposta = await fetch("https://fakestoreapi.com/products");
 
             if (!resposta.ok) {
                 throw new Error(`Erro HTTP:${resposta.status}`);
