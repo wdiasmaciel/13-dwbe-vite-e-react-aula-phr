@@ -16,9 +16,10 @@ export default function Exemplo03({ voltar }) {
 
             const dados = await resposta.json();
             setProdutos(dados);
-            setCarregando(false);
         } catch (erro) {
             console.error(erro.message);
+        } finally {
+            setCarregando(false);
         }
     }
 
