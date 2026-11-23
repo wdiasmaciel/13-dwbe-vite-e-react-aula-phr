@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 
-export default function Exemplo01({ voltar }) {
-
+export default function Exemplo({ voltar }) {
     /*
      * Passar um vetor vazio [] como segundo argumento do useEffect 
      * faz com que o código dentro dele rode apenas uma única vez, 
@@ -25,5 +24,4 @@ export default function Exemplo01({ voltar }) {
             <h3>Lista de Produtos no Console do Navegador</h3>
         </div>
     );
-
 }

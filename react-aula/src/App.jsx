@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Exemplo01 from './components/exemplo01/Exemplo01.jsx'
+import Exemplo01 from './components/exemplo01/Exemplo.jsx'
 
 import './App.css'
 
