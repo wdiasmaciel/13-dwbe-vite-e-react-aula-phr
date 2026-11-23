@@ -99,3 +99,4 @@ git add . && git commit -m "Exemplo" && git push
 5. Adicione tratamento para erros HTTP (404 e 500), exibindo mensagens apropriadas ao usuário.
 6. Organize todas as chamadas da API em arquivos dentro da pasta `services`, separando responsabilidades.
 7. Como desafio, adapte a aplicação para consumir uma API pública (por exemplo, de países, usuários ou livros), exibindo os dados em componentes React reutilizáveis.
+8. Gere um projeto para a API https://dummyjson.com/docs/products.

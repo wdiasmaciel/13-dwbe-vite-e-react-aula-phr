@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import CardProduto from "./CardProduto";
 
-export default function Exemplo01({ voltar }) {
+export default function Exemplo03({ voltar }) {
     const [produtos, setProdutos] = useState([]);
 
     async function carregarProdutos() {
@@ -20,7 +21,7 @@ export default function Exemplo01({ voltar }) {
 
     return (
         <div>
-            <h1>Exemplo 02</h1>
+            <h1>Exemplo 03</h1>
 
             <button className="botao" type="button" onClick={voltar}>
                 Voltar para App
