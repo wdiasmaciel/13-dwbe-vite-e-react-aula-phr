@@ -9,7 +9,7 @@ export default function Exemplo07({ voltar }) {
 
     async function carregarProdutos() {
         try {
-            const resposta = await fetch("https://fakestoreapi.com/products");
+            const resposta = await fetch("https://fakestoreapi.com/productsk");
 
             if (!resposta.ok) {
                 throw new Error(`Erro HTTP: ${resposta.status}`);
@@ -46,7 +46,7 @@ export default function Exemplo07({ voltar }) {
 
             <div className="painel">
                 {erro ? (
-                    <p role="alert">{erro}</p>
+                    <h2 role="alerta">{erro}</h2>
                 ) : carregando ? (
                     <h2 className="carregamento">Carregando Produtos...</h2>
                 ) : (

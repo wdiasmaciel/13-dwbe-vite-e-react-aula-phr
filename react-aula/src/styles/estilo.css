@@ -42,5 +42,9 @@
 }
 
 .carregamento {
+  color: blue;
+}
+
+.alerta {
   color: red;
 }
