@@ -4,18 +4,19 @@ import '../../styles/estilo.css';
 
 export default function Exemplo03({ voltar }) {
     const [produtos, setProdutos] = useState([]);
+    const [carregando, setCarregando] = useState(true);
 
     async function carregarProdutos() {
-
         try {
             const resposta = await fetch("https://fakestoreapi.com/products");
 
             if (!resposta.ok) {
-                throw new Error(`Erro HTTP:${resposta.status}`);
+                throw new Error(`Erro HTTP: ${resposta.status}`);
             }
 
             const dados = await resposta.json();
             setProdutos(dados);
+            setCarregando(false);
         } catch (erro) {
             console.error(erro.message);
         }
@@ -42,16 +43,17 @@ export default function Exemplo03({ voltar }) {
 
             <div className="painel">
                 {
-                    produtos.map(produto => (
-                        <CardProduto
-                            key={produto.id}
-                            nome={produto.title}
-                            preco={produto.price}
-                            descricao={produto.description}
-                            categoria={produto.category}
-                            imagem={produto.image}
-                        />
-                    ))
+                    carregando ? <h2 className="carregamento">Carregando Produtos...</h2> :
+                        produtos.map(produto => (
+                            <CardProduto
+                                key={produto.id}
+                                nome={produto.title}
+                                preco={produto.price}
+                                descricao={produto.description}
+                                categoria={produto.category}
+                                imagem={produto.image}
+                            />
+                        ))
                 }
             </div>
         </div>
