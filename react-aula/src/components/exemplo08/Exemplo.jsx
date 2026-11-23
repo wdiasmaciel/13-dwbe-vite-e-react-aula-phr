@@ -27,7 +27,7 @@ export default function Exemplo08({ voltar }) {
                 }
             });
     }
-    
+
     /*
      * Passar um vetor vazio [] como segundo argumento do useEffect 
      * faz com que o código dentro dele rode apenas uma única vez, 
@@ -36,6 +36,12 @@ export default function Exemplo08({ voltar }) {
     useEffect(() => {
         let ativo = true;
         processar(ativo);
+
+        /*
+         * Executado ao desmontar: impede atualizações de estado após a saída.
+         * A função retornada no return desativa atualizações de estado quando 
+         * o componente é desmontado:
+         */
         return () => {
             ativo = false;
         };
