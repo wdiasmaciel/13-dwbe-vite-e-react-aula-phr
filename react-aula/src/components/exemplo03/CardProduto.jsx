@@ -1,3 +1,5 @@
+import '../../styles/estilo.css';
+
 export default function CardProduto({
     nome,
     preco,

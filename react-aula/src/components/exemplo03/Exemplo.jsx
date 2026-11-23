@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CardProduto from "./CardProduto";
+import '../../styles/estilo.css';
 
 export default function Exemplo03({ voltar }) {
     const [produtos, setProdutos] = useState([]);
@@ -29,18 +30,20 @@ export default function Exemplo03({ voltar }) {
 
             <h2>Lista de Produtos</h2>
 
-            {
-                produtos.map(produto => (
-                    <CardProduto
-                        key={produto.id}
-                        nome={produto.title}
-                        preco={produto.price}
-                        descricao={produto.description}
-                        categoria={produto.category}
-                        imagem={produto.image}
-                    />
-                ))
-            }
+            <div className="painel">
+                {
+                    produtos.map(produto => (
+                        <CardProduto
+                            key={produto.id}
+                            nome={produto.title}
+                            preco={produto.price}
+                            descricao={produto.description}
+                            categoria={produto.category}
+                            imagem={produto.image}
+                        />
+                    ))
+                }
+            </div>
         </div>
     );
 }
