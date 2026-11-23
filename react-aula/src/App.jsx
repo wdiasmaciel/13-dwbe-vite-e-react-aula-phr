@@ -4,6 +4,7 @@ import Exemplo02 from './components/exemplo02/Exemplo.jsx'
 import Exemplo03 from './components/exemplo03/Exemplo.jsx'
 import Exemplo04 from './components/exemplo04/Exemplo.jsx'
 import Exemplo05 from './components/exemplo05/Exemplo.jsx'
+import Exemplo06 from './components/exemplo06/Exemplo.jsx'
 
 import './App.css'
 
@@ -30,6 +31,10 @@ function App() {
     return <Exemplo05 voltar={() => setExemplo('inicio')} />
   }
 
+  if (exemplo === 'exemplo06') {
+    return <Exemplo06 voltar={() => setExemplo('inicio')} />
+  }
+
   return (
     <>
       <h1>Prática 13</h1>
@@ -51,6 +56,10 @@ function App() {
 
       <button className="botao" type="button" onClick={() => setExemplo('exemplo05')}>
         Exemplo 05
+      </button>
+
+      <button className="botao" type="button" onClick={() => setExemplo('exemplo06')}>
+        Exemplo 06
       </button>
     </>
   )
