@@ -3,6 +3,7 @@
 Material:
 
 https://app.notion.com/p/Cap-tulo-10-Consumindo-APIs-REST-com-Fetch-API-39644ced362580d68859ed102118d2b2
+
 ---
 
 ## Comandos
