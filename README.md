@@ -108,3 +108,4 @@ Usando Node.js e Express crie uma API de produtos.
 ---
 
 8. Gere um projeto para a API https://dummyjson.com/docs/products.
+9. Gere um projeto para a API https://jsonplaceholder.typicode.com/photos.
