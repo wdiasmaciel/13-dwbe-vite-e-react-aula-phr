@@ -32,7 +32,7 @@ export default function Exemplo03({ voltar }) {
 
     return (
         <div>
-            <h1>Exemplo 05</h1>
+            <h1>Exemplo 06</h1>
 
             <button className="botao" type="button" onClick={voltar}>
                 Voltar para App
