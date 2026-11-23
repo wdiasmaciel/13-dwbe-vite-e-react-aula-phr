@@ -11,7 +11,7 @@ export default function Exemplo03({ voltar }) {
             const resposta = await fetch("https://fakestoreapi.com/products");
 
             if (!resposta.ok) {
-                throwNewError(`Erro HTTP:${resposta.status}`);
+                throw new Error(`Erro HTTP:${resposta.status}`);
             }
 
             const dados = await resposta.json();
