@@ -97,7 +97,7 @@ git add . && git commit -m "Exemplo" && git push
 
 ---
 
-Usando Node.js e Express crie uma API de produtos.
+Usando Node.js, Express, Vite e React crie uma API de produtos.
 
 3. Crie uma função `listarCategorias()` que consulte o endpoint `GET /categorias` utilizando a Fetch API.
 4. Implemente uma tela que exiba uma mensagem de carregamento enquanto a requisição estiver em andamento.
